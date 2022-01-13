@@ -8,3 +8,4 @@ for tech in tech_comp:
         print(tech.upper())
     else:
         print(tech.title())
+print("It is well all the time")
