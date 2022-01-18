@@ -138,9 +138,10 @@ print("Importing an entire module")
 # A module is a file ending in .py that contains d code u want to import into ur prog.
 # e.g lets make a module that contains d function make_pizza().
 # check the module pizza.py and making_pizzas.py
-# check for continuation of the functions topics
 
-
+print('\n')
+print(f"-" * 20)
+print("Using as to give a function an Alias")
 
 
 

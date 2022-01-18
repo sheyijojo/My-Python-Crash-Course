@@ -181,4 +181,15 @@ def greet_users(names):
 users = ["Drake", "Karty", "Obama"]
 greet_users(users)
 
+print("-" * 20)
+print("Modifying a List to a function")
+#code that shows designs to be printed and after being printed are stored in seperate list.
+#start with some designs that need to be printed
+unprinted_designs = ['phone', 'tv', 'house', 'calender']
+completed_models = []
 
+#simulate printing each design, until none are left.
+
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    print(f"Printing model: {current_design}")
