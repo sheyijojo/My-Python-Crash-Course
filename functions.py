@@ -115,3 +115,81 @@ print(musician)
 musician = get_formatted_name('John', 'hooker', 'lee')
 print(musician)
 """
+
+# Returning a dictionary
+print("*" * 20)
+print("Returning a dictionary")
+def build_person(first_name, last_name, age = None):
+    """ Return a dictionary of information about a person """
+    person = {'first': first_name, 'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+    
+musician = build_person('Buju', 'Banson', age=27)
+print(musician)
+
+# using a function with a while loop
+print("-" * 20)
+print("using a function with a while loop")
+
+def def_formatted(first_name, second_name):
+    full_name = f"Your king's name is: {first_name} {second_name}"
+    return full_name  
+
+formatted_names = def_formatted('Olusheyi', 'Gaji')
+print(formatted_names)
+
+
+print("-" * 20)
+print("Always put break in your while loop to prevent infinite loops")
+# always put break in your while loop to prevent infinite loops
+
+def new_roles(first_job, second_job):
+    """return your kind of jobs"""
+    two_jobs = f"{first_job} and {second_job}!."
+    return two_jobs
+
+#ise = new_roles('DevOps Cloud', 'Business Intelligence Developer')
+
+#print(ise)"""
+
+while True:
+    print("(enter 'end' at any time to quit)")
+    f_job = input("enter your First Job: ") 
+    if f_job == 'end':
+        break
+
+    print("(enter 'q' at any time to quit)")
+    s_job = input("enter your Second Job: ") 
+    if s_job == 'q':
+        break
+
+    work = new_roles(f_job, s_job)
+    print(f"\n congrats for your new job as {work}")
+
+print("\n")
+print("-" * 20)
+print("Passing a List to a function")
+# Passing a list to  function
+
+def greet_users(names):
+    for name in names:
+        msg = f"Hello, {name.title()}"
+        print(msg)
+
+users = ["Drake", "Karty", "Obama"]
+greet_users(users)
+
+print("-" * 20)
+print("Modifying a List to a function")
+#code that shows designs to be printed and after being printed are stored in seperate list.
+#start with some designs that need to be printed
+unprinted_designs = ['phone', 'tv', 'house', 'calender']
+completed_models = []
+
+#simulate printing each design, until none are left.
+
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    print(f"Printing model: {current_design}")
