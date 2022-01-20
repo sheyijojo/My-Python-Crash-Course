@@ -6,9 +6,12 @@ print("Creating a Dog class")
 class Dog:  #class is defined. No parenthesis, we are creating this class from scratch
     """ A simple attempt to model a dog. """
 
-    def __init__(self, name, age): # a function part of a class is called a method.
+# each instances created from d dog class will store a name and an age and we will give each
+# dog the ability to sit() and roll().
+
+    def __init__(self, name, age): # a function that is part of a class is called a method.
      """initialize name and age attributes"""
-     self.name = name
+     self.name = name # attribues 
      self.age= age # every variable prefixed by self is available to every method in the class
 
 # The __init__() method is a special method that python runs automically whenever we create a new instance based
@@ -16,7 +19,7 @@ class Dog:  #class is defined. No parenthesis, we are creating this class from s
 # the method is defined with 3 parameters.
 
 #when we call the method, python passes self, we can pass Dog() a name and an age arguments, self is passed automically
-
+# any variable prefixed with  self is available to every method in the class. 
 
     def sit(self):
         """simulate a dog sitting in response to a command"""
@@ -41,10 +44,15 @@ my_dog = Dog('Wille', 10)
 
 # use dot to access the attributes an instance e,g my_dog.name
 
-print(f"My dog's name is {my_dog.name}.")
+print(f"My dog's name is {my_dog.name}.") # accessing the attributes of an instance
 print(f"My dog is {my_dog.age} years old.")
 
 print("." * 20)
 print("Accessing the methods under Dog class")
 my_dog.sit()
 my_dog.roll_over()
+
+# creating multiple instances
+your_dog = Dog('Mucy', 5)
+print(f"This your dog, {your_dog.name} is {your_dog.age} years old! chai!")
+your_dog.sit()

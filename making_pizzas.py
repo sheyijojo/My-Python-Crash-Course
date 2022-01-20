@@ -21,7 +21,7 @@ print("from module_name import function_name")
 
 #import as many functions, seperated by commas
 
-# from pizza import make_pizza
+from pizza import make_pizza
 make_pizza(15, 'ajebutter')
 make_pizza(20, 'Ajeju', 'Ewa Agoing', 'Egusi')
 
